@@ -7,11 +7,15 @@ export const Header = (props) => {
           <div className='container'>
             <div className='row'>
               <div className='col-md-8 col-md-offset-2 intro-text'>
-                <h1>
-                  
-                  <span></span>
-                </h1>
                 <p>{props.data ? props.data.paragraph : 'Loading'}</p>
+              </div>
+              <div className='missionWrapper'>
+                <h4>
+                  {props.data ? props.data.title : ''}
+                </h4>
+                <span>
+                  {props.data ? props.data.statement : ''}
+                </span>
               </div>
             </div>
           </div>

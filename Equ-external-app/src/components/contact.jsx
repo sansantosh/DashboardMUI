@@ -42,8 +42,7 @@ export const Contact = (props) => {
               <div className='section-title'>
                 <h2>Get In Touch</h2>
                 <p>
-                  Please fill out the form below to send us an email and we will
-                  get back to you as soon as possible.
+                  Want to learn more? Please fill out the form below and we'll get in touch!
                 </p>
               </div>
               <form name='sentMessage' validate onSubmit={handleSubmit}>
@@ -124,7 +123,7 @@ export const Contact = (props) => {
       </div>
       <div id='footer'>
         <div className='container'>
-          <img src='img/logoSmall.png' />
+          <img src='img/logo_top.png' />
           <span class="text-right">© 2021 Equilibrium Energy, Inc.</span>
         </div>
       </div>

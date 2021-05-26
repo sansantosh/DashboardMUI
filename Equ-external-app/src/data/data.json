@@ -1,9 +1,12 @@
 {
     "Header": {
+        "title": "MISSION",
+        "statement": "to accelerate our collective path to climate, electricity, and societal equilibriums"
 
-        "title": "Our Mission - To accelerate our collective path to climate, electricity, and societal equilibriums",
-        "paragraph": ""
-
+    },
+    "Mission": {
+        "title": "MISSION",
+        "statement": "to accelerate our collective path to climate, electricity, and societal equilibriums"
     },
     "Carrer": {
         "paragraph": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
@@ -126,9 +129,9 @@
         "facebook": "fb.com",
         "twitter": "twitter.com",
         "youtube": "youtube.com",
-        "ejsUserId": "user_HUlP1peOBKs0s744HGxGo",
-        "ejsServiceId": "service_2om973b",
-        "ejsTemplateId": "template_msob2r8"
+        "ejsUserId": "user_cc0Fu6JBIyQz2LQDIhEiM",
+        "ejsServiceId": "service_est335w",
+        "ejsTemplateId": "template_2syv0dp"
     },
     "Features": [{
             "icon": "fa fa-comments-o",

@@ -1,5 +1,19 @@
 import React from 'react';
 export const Navigation = (props) => {
+  const handleClick = (evt) => {
+    if(evt.target.getAttribute('href') === "#mission") {
+      let rootEl = document.getElementById('root');
+      rootEl.classList.add('missionPage');
+      window.scroll({
+        top: -0, 
+        left: 0, 
+        behavior: 'smooth'
+      });
+    } else {
+      document.getElementById('root').classList.remove('missionPage')
+    }
+
+  }
   return (
     <nav id='menu' className='navbar navbar-default navbar-fixed-top'>
       <div className='container'>
@@ -16,8 +30,8 @@ export const Navigation = (props) => {
             <span className='icon-bar'></span>{' '}
             <span className='icon-bar'></span>{' '}
           </button>
-          <a className='navbar-brand page-scroll' href='#page-top'>
-             <img src='img/logoMain.png' alt='' />{' '}
+          <a className='navbar-brand page-scroll' href='#page-top' onClick={handleClick}>
+             <img src='img/logo_top.png' alt='' />{' '}
           </a>{' '}
         </div>
 
@@ -26,8 +40,8 @@ export const Navigation = (props) => {
           id='bs-example-navbar-collapse-1'
         >
           <ul className='nav navbar-nav navbar-right'>
-            <li class="active">
-              <a href='#' className='page-scroll'>
+            <li>
+              <a href='#mission' className='page-scroll' onClick={handleClick}>
                 Mission
               </a>
             </li>

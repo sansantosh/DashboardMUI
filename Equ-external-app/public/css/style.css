@@ -81,9 +81,10 @@ hr {
 	font-weight: 700;
 	color: #333;
 	text-transform: uppercase;
+	padding: 5px;
 }
 #menu a.navbar-brand img {
-	width: 180px;
+	width: 80px;
 }
 #menu.navbar-default .navbar-nav > li > a {
 	font-family: 'Open Sans', sans-serif;
@@ -186,21 +187,56 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 	outline-offset: none;
 }
 /* Header Section */
-.intro {
-	display: table;
-	width: 100%;
-	padding: 0;
+.missionWrapper {
+	display: none;
 }
-.intro .overlay {
-	background: rgba(0,0,0,0.2);
-	position: relative;
+.missionPage .missionWrapper {
+	display: flex;
+    max-height: 100px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    padding: 16px 200px;
+    bottom: -4px;
+    background: #050648;
+    color: #5DE4D3;
+    font-family: 'Open Sans';
+    font-size: 23px;
+    flex-direction: row;
+    align-content: stretch;
+    align-items: flex-start;
+}
+.missionWrapper span {
+	text-align: left;
+    padding: 10px;
+}
+.intro {
+    padding: 0;
+    position: relative;
+    height: 100%;
 	overflow: hidden;
 }
+.intro .overlay {
+    background-image: url('../img/backgroundImage.jpg');
+    background-size: cover;
+    height: 100%;
+    background-position-x: 20%;
+    background-position-y: 88%;
+
+}
+
+.intro .overlay .row {
+	background-image: url(../img/header_center_logo.png);
+    background-size: 84%;
+    background-repeat: no-repeat;
+    height: 100%;
+    background-position-x: 42%;
+    background-position-y: 43%;
+}
+
 .intro img {
-	position: absolute;
-	width: 100%;
-	bottom: 0;
-	height: 100%
+    width: 100%;
 }
 .intro h1 {
 	font-family: 'Open Sans', sans-serif;
@@ -214,6 +250,23 @@ a:focus, .btn:focus, .btn:active:focus, .btn.active:focus, .btn.focus, .btn:acti
 .intro h1 span {
 	font-weight: 800;
 	color: #5ca9fb;
+}
+.intro h4 {
+	padding: 0 10px;
+    display: inline;
+	color: #5DE4D3;
+	position: relative;
+	font-size: 34px;
+	font-family: 'Open Sans';
+}
+.intro h4::after {
+	position: absolute;
+    content: "";
+    background: linear-gradient(to right, #5ca9fb 0%, #6372ff 100%);
+    height: 4px;
+    width: 26px;
+    bottom: -5px;
+    left: 8px;
 }
 .intro p {
 	color: #fff;
@@ -451,9 +504,11 @@ header .intro-text {
 }
 #contact .section-title p {
 	font-size: 16px;
+	font-family: 'Open Sans';
 }
 #contact * {
 	color: #121212 !important;
+	font-family: 'Open Sans';
 }
 #contact h2 {
 	margin-top: 10px;
@@ -571,7 +626,8 @@ color: #777;
 /* Footer Section*/
 #footer {
 	background: #00BAEF;
-	padding: 30px 0;
+	padding: 20px 0;
+	font-family: 'Open Sans';
 }
 #footer p {
 	font-size: 14px;
